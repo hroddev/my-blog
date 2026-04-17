@@ -1,0 +1,11 @@
+
+title = "Aprendiendo Linux"
+
+[params.author]
+name = "Hector Rodriguez"
+image = "img/author.jpg"
+headline = "A generally awesome human"
+bio = "A little bit about me"
+links = [
+  { twitter = "https://twitter.com/hroddev" }
+]
