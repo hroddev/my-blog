@@ -1,0 +1,25 @@
+/* assets/css/schemes/nord-aurora.css */
+
+:root {
+  /* Polar Night (Fondos) - El color base profundo de tu imagen */
+  --color-neutral: #2e3440;
+  --color-neutral-background: #2e3440; /* Nord 0 - Fondo principal */
+  
+  /* Snow Storm (Texto) - El gris claro y el blanco ártico */
+  --color-neutral-text: #d8dee9;       /* Nord 4 - Párrafos (como en tu imagen) */
+  --color-neutral-50: #3b4252;        /* Nord 1 - Para tarjetas o hovers de fondo */
+  --color-neutral-400: #4c566a;       /* Nord 3 - Texto secundario (metadata, fechas) */
+  --color-neutral-800: #eceff4;       /* Nord 6 - Títulos (Blanco puro y brillante) */
+
+  /* Aurora (Acentos / Interacción) - Usando Nord 14 y Nord 15 */
+  --color-primary-400: #a3be8c;       /* Nord 14 (Verde) - Enlaces en hover */
+  --color-primary-500: #b48ead;       /* Nord 15 (Púrpura) - El color de acento principal */
+  --color-primary-600: #bf616a;       /* Nord 11 (Rojo) - Alertas críticas o botones de acción */
+}
+
+/* Forzar el modo oscuro con los acentos Aurora */
+.dark, :root {
+  --color-neutral-background: #2e3440; /* Nord 0 */
+  --color-neutral-text: #d8dee9;       /* Nord 4 */
+  --color-primary-500: #b48ead;       /* Nord 15 */
+}
