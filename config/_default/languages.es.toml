@@ -1,11 +1,22 @@
+disabled = false
+locale = "es"
+label = "Español"
+weight = 1
+title = "hrod.dev"
 
-title = "Aprendiendo Linux"
+[params]
+  displayName = "ES"
+  isoCode = "es"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Blog de infraestructura, Linux y tecnologia"
 
 [params.author]
-name = "Hector Rodriguez"
-image = "img/author.jpg"
-headline = "A generally awesome human"
-bio = "A little bit about me"
-links = [
-  { twitter = "https://twitter.com/hroddev" }
-]
+  name = "Hector Rodriguez"
+  # image = "img/author.jpg"
+  headline = "Infraestructura & Linux"
+  bio = "Blog de infraestructura, Linux y tecnologia"
+  links = [
+    { twitter = "https://twitter.com/hroddev" },
+    # { github = "https://github.com/username" },
+  ]

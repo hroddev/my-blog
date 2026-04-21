@@ -1,0 +1,34 @@
+# -- Menu Principal --
+
+[[main]]
+  name = "Linux"
+  pageRef = "categories/linux"
+  weight = 10
+  [main.params]
+    icon = "code"
+
+[[main]]
+  name = "Infraestructura"
+  pageRef = "categories/infraestructura"
+  weight = 20
+  [main.params]
+    icon = "globe"
+
+[[main]]
+  name = "Seguridad"
+  pageRef = "categories/seguridad"
+  weight = 30
+  [main.params]
+    icon = "shield"
+
+[[main]]
+  name = "Cloud"
+  pageRef = "categories/cloud"
+  weight = 40
+  [main.params]
+    icon = "cloud"
+
+[[main]]
+  name = "Blog"
+  pageRef = "posts"
+  weight = 50

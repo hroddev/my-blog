@@ -34,7 +34,7 @@ disableTextInHeader = false
 # defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
 # Thumbnail aspect ratio as a number (e.g., "1.5", "1.0", "1.777")
-# thumbnailAspectRatio = "1.5"
+thumbnailAspectRatio = "1.5"
 # imagePosition = "50% 50%"
 
 # highlightCurrentMenuArea = true
@@ -57,15 +57,15 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "profile" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
-  showRecent = false
-  showRecentItems = 5
-  showMoreLink = false
+  layout = "card" # valid options: page, profile, hero, card, background, custom
+  # homepageImage = "nord-hero.png" # used in: hero, and card
+  showRecent = true
+  showRecentItems = 6
+  showMoreLink = true
   showMoreLinkDest = "/posts/"
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
+  layoutBackgroundBlur = true # only used when layout equals background
   disableHeroImageFilter = false # only used when layout equals hero
 
 [article]
@@ -75,6 +75,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
+  showAuthorBottom = true
   # showAuthorBottom = false
   showHero = false
   # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
@@ -90,7 +91,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showPagination = true
   invertPagination = false
   showReadingTime = true
-  showTableOfContents = false
+  showTableOfContents = true
   # showRelatedContent = false
   # relatedContentLimit = 3
   showTaxonomies = false # Enable the display of taxonomies for the related article.
@@ -112,11 +113,10 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showSummary = false
   showViews = false
   showLikes = false
-  showTableOfContents = false
-  showCards = false
+  showCards = true
   orderByWeight = false
   groupByYear = true
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
   constrainItemsWidth = false
 

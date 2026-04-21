@@ -3,8 +3,9 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish" # UNCOMMENT THIS LINE
-# baseURL = "https://your_domain.com/"
-defaultContentLanguage = "en"
+baseURL = "https://blog.hrod.dev/"
+languageCode = "es"
+defaultContentLanguage = "es"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
@@ -67,3 +68,16 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+[params.tailwind]
+  [params.tailwind.config.theme.extend.colors]
+    nord-red = "#bf616a"
+    nord-orange = "#d08770"
+    nord-yellow = "#ebcb8b"
+    nord-green = "#a3be8c"
+    nord-purple = "#b48ead"
+    nord-azure = "#88c0d0"
+    nord-frost-1 = "#8fbcbb"
+    nord-frost-2 = "#88c0d0"
+    nord-frost-3 = "#81a1c1"
+    nord-frost-4 = "#5e81ac"

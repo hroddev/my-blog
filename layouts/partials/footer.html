@@ -1,0 +1,36 @@
+<!-- layouts/partials/footer.html -->
+<footer class="mt-32 pt-24 pb-20 border-t border-nord1 opacity-90">
+  <div class="flex flex-col items-center text-center gap-12">
+    
+    <!-- Info Personal -->
+    <div class="space-y-1">
+      <div class="text-nord6 font-bold text-lg tracking-tight">
+        {{ .Site.Params.author.name | default "Hector Rodriguez" }}
+      </div>
+      <div class="text-nord8 font-mono text-sm opacity-80">
+        {{ .Site.Params.author.headline | default "Cloud & DevOps Engineer" }}
+      </div>
+    </div>
+
+    <!-- Enlaces Sociales -->
+    <div class="flex items-center gap-6">
+      {{ range .Site.Params.author.links }}
+        {{ range $name, $url := . }}
+          <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" 
+             class="text-nord4 hover:text-nord8 transition-all duration-300 transform hover:scale-110"
+             aria-label="{{ $name }}">
+            {{ partial "icon.html" $name }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <!-- Copyright / Powered by -->
+    <div class="text-nord3 text-xs mt-4">
+      &copy; {{ now.Format "2006" }} {{ .Site.Title }}. 
+      Hecho con <a href="https://blowfish.page" class="hover:text-nord4 underline decoration-nord3">Blowfish</a> y 
+      <a href="https://gohugo.io" class="hover:text-nord4 underline decoration-nord3">Hugo</a>.
+    </div>
+
+  </div>
+</footer>

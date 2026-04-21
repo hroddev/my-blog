@@ -1,0 +1,15 @@
+{{ $type := .Get "type" | default "nord-purple" }}
+{{/* Mapeamos el tipo al color de la paleta Aurora que definimos arriba */}}
+{{ $colorMap := dict "info" "nord-purple" "success" "nord-green" "warning" "nord-yellow" "error" "nord-red" "azure" "nord-azure" }}
+{{ $nordColor := index $colorMap $type | default $type }}
+
+<div class="flex p-4 my-6 border-l-4 bg-neutral-800 border-{{ $nordColor }} rounded-r-md shadow-lg">
+    <div class="ml-3">
+        <span class="text-xs font-bold uppercase tracking-widest text-{{ $nordColor }}">
+            {{ $type }}
+        </span>
+        <div class="mt-1 text-sm text-neutral-200">
+            {{ .Inner | markdownify }}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+}
+
+body {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif !important;
+  color: var(--nord4) !important;
+  background-color: var(--nord0) !important;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+}
+
+/* Tipografía Vibrante */
+h1, h2, h3, h4 {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--nord6) !important;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+h1 { 
+  font-size: 2.25rem !important; 
+  margin-top: 3rem !important;
+  margin-bottom: 1rem !important; 
+}
+
+h2 { font-size: 1.5rem !important; border-left: 4px solid var(--nord12); padding-left: 1rem; }
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--nord1);
+  margin: 3rem 0;
+  opacity: 0.5;
+}
+
+/* Estilización de Tarjetas (Cards) */
+.card {
+  background-color: var(--nord1) !important;
+  border: 1px solid var(--nord2) !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--nord3) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.thumbnail_card {
+  border-bottom: 1px solid var(--nord2);
+  filter: saturate(0.8) contrast(1.1);
+}
+
+.article-link--card h2 {
+  border: none !important;
+  padding-left: 0 !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.75rem !important; /* Espacio extra con la meta-info */
+  font-size: 1.125rem !important; /* text-lg */
+  line-height: 1.4 !important;
+  color: var(--nord6) !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  height: 2.8em !important; /* Altura matemática exacta para 2 líneas */
+}
+
+/* Islas de Contenido */
+code:not(pre code) {
+  background-color: var(--nord1);
+  color: var(--nord13);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: var(--nord1) !important;
+  border: 1px solid var(--nord2) !important;
+  border-radius: 8px !important;
+  padding: 1.5rem !important;
+}
+
+blockquote {
+  background-color: var(--nord1);
+  border-left: 4px solid var(--nord8) !important;
+  padding: 1.5rem 2rem !important;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: var(--nord5);
+}
+
+/* Listas con Acento Aurora */
+ul { list-style: none; padding-left: 1.5rem; }
+ul li::before {
+  content: "•";
+  color: var(--nord8);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Profundidad en Imágenes */
+.prose img, img {
+  border-radius: 12px;
+  border: 1px solid var(--nord2);
+}
+
+/* Layout spacing */
+.home-intro {
+  max-width: 800px;
+  margin: 4rem auto 6rem auto;
+}
+
+/* Espacio después del botón Mostrar Más en la home */
+.mt-10.flex.justify-center {
+  margin-bottom: 8rem !important;
+}
+
+.arctic-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.placeholder-img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  background: var(--nord1);
+  border: 2px dashed var(--nord3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nord3);
+  margin: 2rem auto;
+}
