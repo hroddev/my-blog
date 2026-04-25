@@ -49,25 +49,28 @@ hr {
   opacity: 0.5;
 }
 
-/* Estilización de Tarjetas (Cards) */
+/* Estilización de Tarjetas (Cards) - Estilo Card Gallery */
 .card {
   background-color: var(--nord1) !important;
-  border: 1px solid var(--nord2) !important;
-  border-radius: 16px !important;
+  border: none !important;
+  border-radius: 12px !important;
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  box-shadow: none !important;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  border-color: var(--nord3) !important;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
 }
 
 .thumbnail_card {
-  border-bottom: 1px solid var(--nord2);
+  border-bottom: none;
   filter: saturate(0.8) contrast(1.1);
+}
+
+.thumbnail_card_related {
+  border-bottom: none;
 }
 
 .article-link--card h2 {
@@ -135,7 +138,7 @@ ul li::before {
 
 /* Espacio después del botón Mostrar Más en la home */
 .mt-10.flex.justify-center {
-  margin-bottom: 8rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .arctic-section {
@@ -157,4 +160,66 @@ ul li::before {
   margin: 2rem auto;
 }
 
+/* Estilo Nord para el header fixed de Blowfish */
+#menu-blur {
+  background-color: var(--nord1) !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
 
+.main-menu {
+  padding: 0.75rem 0 !important;
+}
+
+body {
+  padding-top: 0 !important;
+}
+
+/* Estilo para el footer del sitio */
+footer.opacity-90 {
+  background-color: transparent !important;
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding: 1.5rem calc(50vw - 50%) !important;
+  margin-top: 6rem !important;
+  margin-bottom: 0 !important;
+  border-top: none;
+}
+
+/* Resetear el footer del artículo (paginación) */
+article footer {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  width: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border: none !important;
+}
+
+/* Alinear íconos de compartir con el texto */
+.flex.items-center.gap-3 section {
+  padding-top: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+/* Paginación entre artículos - Texto limpio como en Blowfish */
+.pt-8 > hr {
+  border-color: var(--nord2) !important;
+  opacity: 0.4;
+}
+
+/* El estilo de la tarjeta de relacionados se define con Tailwind en card-related.html */
+
+
+/* Estilo Nord para el header fixed de Blowfish - detalles */
+#header {
+  border-bottom: none !important;
+}
+
+/* El botón "Mostrar más" se define con Tailwind en recent-articles/main.html */

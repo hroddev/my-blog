@@ -1,18 +1,10 @@
 ---
-title: "Bienvenido a hrod.dev: Un espacio para aprender Linux, Infraestructura y Seguridad"
+title: "Bienvenido a hrod.dev"
 date: 2026-04-19T06:21:00-05:00
 draft: false
 categories:
   - Comunidad
-  - Anuncios
-  - Linux
-  - Seguridad
-  - Cloud
 tags:
-  - linux
-  - infraestructura
-  - seguridad
-  - cloud
   - opensource
 showAuthor: true
 showTableOfContents: true
