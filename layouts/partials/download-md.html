@@ -1,0 +1,24 @@
+<div class="mt-12 border-t border-dotted border-neutral-300 pt-8 dark:border-neutral-600">
+    
+    <!-- Fila: Compartir + Descargar -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+        
+        <!-- Compartir (Izquierda) -->
+        <div class="flex items-center gap-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-neutral-400">Compartir</span>
+            {{ partial "sharing-links.html" . }}
+        </div>
+        
+        <!-- Descargar (Derecha) -->
+        <a href="https://github.com/hrod-dev/blog/raw/main/content/{{ .File.Path }}" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="flex items-center gap-2 text-sm font-medium text-neutral-400 hover:text-primary-400 transition-colors group">
+            <span class="p-1.5 rounded bg-neutral-700 group-hover:bg-primary-500 transition-colors">
+                {{ partial "icon.html" "download" }}
+            </span>
+            <span>Descargar .md</span>
+        </a>
+    </div>
+
+</div>
