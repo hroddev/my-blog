@@ -2,6 +2,7 @@
 title: "Helix Cloud: Despliegue Inicial"
 date: 2026-04-17
 tags: ["infraestructura", "hugo"]
+categories: ["Infraestructura"]
 featureImage: "images/nord-mountains.png"
 ---
 

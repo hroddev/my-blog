@@ -17,6 +17,8 @@ title = "hrod.dev"
   headline = "Infraestructura & Linux"
   bio = "Blog de infraestructura, Linux y tecnologia"
   links = [
-    { twitter = "https://twitter.com/hroddev" },
-    # { github = "https://github.com/username" },
+    { globe = "https://helixcloud.dev" },
+    { linkedin = "https://linkedin.com/in/hroddev" },
+    { github = "https://github.com/hroddev" },
+    { twitter = "https://twitter.com/hroddev" }
   ]

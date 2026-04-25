@@ -5,6 +5,9 @@ draft: false
 categories:
   - Comunidad
   - Anuncios
+  - Linux
+  - Seguridad
+  - Cloud
 tags:
   - linux
   - infraestructura
