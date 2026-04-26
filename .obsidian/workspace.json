@@ -184,6 +184,7 @@
   },
   "active": "065299cfc5edb5a9",
   "lastOpenFiles": [
+    "layouts/partials/header/basic.html~",
     "layouts/_default/baseof.html",
     "layouts/partials/extend-head.html",
     "layouts/partials/head-custom.html",
@@ -212,7 +213,6 @@
     "content/posts/2026-que-distro-uso",
     "Untitled.md",
     "public/tags/bash/index.xml",
-    "public/tags/scripting/index.xml",
     "GUIA_BLOG.md",
     "README.md",
     "demo.md",
