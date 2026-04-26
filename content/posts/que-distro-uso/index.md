@@ -1,7 +1,7 @@
 ---
 title: El salto a linux
 date: 2026-04-25T10:00:00-05:00
-draft: false
+draft: true
 categories:
   - Linux
 tags:
