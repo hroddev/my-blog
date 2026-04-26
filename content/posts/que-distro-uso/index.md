@@ -9,6 +9,7 @@ tags:
   - bash
   - scripting
   - opensource
+description: Si estás dando tus primeros pasos en el mundo de la infraestructura, el desarrollo o la nube, llega un momento en el que tu sistema operativo actual empieza a sentirse como un límite
 ---
 # El Salto a Linux: Cómo Elegir tu Primera Distro y Abrazar la Terminal
 

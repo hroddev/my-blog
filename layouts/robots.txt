@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /public/
+Disallow: /resources/
+
+# Enlace directo al Sitemap para facilitar la indexación
+Sitemap: {{ "sitemap.xml" | absURL }}

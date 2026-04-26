@@ -1,12 +1,13 @@
 ---
-title: "Título de tu artículo"
+title: Título de tu artículo
 date: 2026-04-25T10:00:00-05:00
-draft: false # Cambiar a false cuando estés listo para publicar
+draft: false
 categories:
-  - Linux      # Usa categorías para los pilares principales de tu blog
+  - Linux
 tags:
-  - bash       # Usa etiquetas para temas más específicos
+  - bash
   - scripting
+description:
 ---
 
 # Introducción
