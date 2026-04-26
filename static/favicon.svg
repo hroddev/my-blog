@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bf616a"/>
+      <stop offset="50%" stop-color="#d08770"/>
+      <stop offset="100%" stop-color="#ebcb8b"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="128" height="128" rx="28" fill="#2e3440"/>
+  <!-- Chevron > -->
+  <path d="M28 34 L62 64 L28 94" fill="none" stroke="url(#aurora)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Underscore _ -->
+  <line x1="68" y1="94" x2="100" y2="94" stroke="url(#aurora)" stroke-width="12" stroke-linecap="round"/>
+</svg>

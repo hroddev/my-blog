@@ -13,6 +13,7 @@
 # defaultAppearance = "light" # valid options: light or dark
 # autoSwitchAppearance = true
 
+logo = "img/logo.svg"
 enableA11y = false
 enableSearch = true
 enableCodeCopy = false
