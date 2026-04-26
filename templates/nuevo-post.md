@@ -1,17 +1,12 @@
 ---
-title: "{{title}}"
-date: {{date}} {{time}}
-description: ""
-draft: true
+title: "Título de tu artículo"
+date: 2026-04-25T10:00:00-05:00
+draft: false # Cambiar a false cuando estés listo para publicar
 categories:
-  - Comunidad
+  - Linux      # Usa categorías para los pilares principales de tu blog
 tags:
-  - linux
-  - infraestructura
-  - seguridad
-  - cloud
-showAuthor: true
-showTableOfContents: true
+  - bash       # Usa etiquetas para temas más específicos
+  - scripting
 ---
 
 # Introducción
