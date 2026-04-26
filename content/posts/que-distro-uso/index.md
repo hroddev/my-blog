@@ -4,9 +4,11 @@ date: 2026-04-25T10:00:00-05:00
 draft: true
 categories:
   - Linux
+  - Infraestructura
 tags:
   - bash
   - scripting
+  - opensource
 ---
 # El Salto a Linux: Cómo Elegir tu Primera Distro y Abrazar la Terminal
 
@@ -44,6 +46,7 @@ Como todo cambio importante, adoptar Linux tiene sus matices.
 ## 🧭 Cómo Elegir tu Primera Distro
 
 ![](../../../static/images/Pasted%20image%2020260426165933.png)
+
 No te compliques en tu primer día. El objetivo inicial es tener un sistema funcional para que puedas concentrarte en aprender, no en reparar.
 
 1. **Para Empezar (La Ruta Segura):** **Ubuntu** o **Linux Mint** (basada en Ubuntu). Tienen la comunidad más grande, por lo que cualquier error que encuentres ya ha sido resuelto y documentado por alguien más en internet. Son excelentes para instalar y empezar a trabajar de inmediato.  Puedes empezar utilizando `WSL` dentro de Windows.

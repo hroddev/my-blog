@@ -1,9 +1,8 @@
-<div class="flex items-center w-full py-4 px-2 bg-[#4c566a] dark:bg-[#4c566a]" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+<div class="flex items-center w-full py-4 px-2 bg-[#2e3440] dark:bg-[#2e3440]" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
   
-  <!-- Lado Izquierdo: Logo e Icono -->
+  <!-- Logo e Icono -->
   <div class="flex items-center flex-none">
-    <a href="{{ "https://hrod.dev" | relLangURL }}" class="flex items-center nozoom" style="text-decoration: none;">
-      <!-- Icono prompt > -->
+    <a href="{{ "" | relLangURL }}" class="flex items-center nozoom" style="text-decoration: none;">
       <svg width="24" height="24" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; display: block;">
         <defs>
           <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -14,45 +13,41 @@
         </defs>
         <path d="M12 10 L35 30 L12 50" stroke="url(#aurora)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      <!-- Texto hrod.dev -->
       <span style="font-size: 1.25rem; letter-spacing: -0.025em; color: white;">
         <strong style="font-weight: 700;">hrod</strong><span style="font-weight: 300; opacity: 0.5;">.dev</span>
       </span>
     </a>
   </div>
 
-  <!-- Lado Derecho: Navegación + Sociales -->
+  <!-- Derecha: Navegación + Sociales -->
   <div class="flex items-center ms-auto">
     
-    <!-- Navegación forzando espaciado entre items -->
+    <!-- Navegación con color de fuente Nord Snow Storm (#e5e9f0) -->
     <nav class="hidden md:flex items-center">
       {{ range .Site.Menus.main }}
         <a href="{{ .URL | relLangURL }}" 
-           style="margin-left: 2.5rem; font-size: 0.875rem; font-weight: 400; color: #d8dee9; text-decoration: none;" 
+           style="margin-left: 2.5rem; font-size: 0.875rem; font-weight: 400; color: #e5e9f0; text-decoration: none;" 
            class="hover:text-white transition-colors">
           {{ .Name }}
         </a>
       {{ end }}
     </nav>
 
-    <!-- Separador vertical y Sociales -->
-    <div class="hidden md:flex items-center" style="margin-left: 2rem; padding-left: 2rem; border-left: 1px solid rgba(216, 222, 233, 0.2);">
-      <a href="https://github.com/hroddev/my-blog" target="_blank" style="color: #d8dee9; margin-right: 1rem;" class="hover:text-white">
+    <!-- Separador y Sociales con espacio equilibrado -->
+    <div class="hidden md:flex items-center" style="margin-left: 2rem; padding-left: 2rem; border-left: 1px solid rgba(229, 233, 240, 0.2);">
+      <a href="https://github.com/hroddev" target="_blank" style="color: #e5e9f0; margin-right: 1rem;" class="hover:text-white flex items-center">
         {{ partial "icon.html" "github" }}
       </a>
-      <a href="https://linkedin.com/in/hroddev" target="_blank" style="color: #d8dee9;" class="hover:text-white">
+      <a href="https://linkedin.com/in/hroddev" target="_blank" style="color: #e5e9f0; margin-left: 1rem;" class="hover:text-white flex items-center">
         {{ partial "icon.html" "linkedin" }}
       </a>
     </div>
 
-    <!-- Buscador y Switcher -->
+    <!-- Buscador (Icono luna eliminado) -->
     <div class="flex items-center" style="margin-left: 2rem;">
-      <button id="search-button" style="color: #d8dee9; margin-right: 1rem; background: none; border: none; cursor: pointer;">
+      <button id="search-button" style="color: #e5e9f0; background: none; border: none; cursor: pointer;">
         {{ partial "icon.html" "search" }}
       </button>
-      <!-- <button id="appearance-switcher" style="color: #d8dee9; background: none; border: none; cursor: pointer;"> -->
-      <!--   {{ partial "icon.html" "moon" }} -->
-      <!-- </button> -->
     </div>
 
   </div>

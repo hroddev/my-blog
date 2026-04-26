@@ -11,10 +11,14 @@
             "id": "065299cfc5edb5a9",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Vista gráfica"
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/que-distro-uso/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -180,6 +184,7 @@
   },
   "active": "065299cfc5edb5a9",
   "lastOpenFiles": [
+    "content/posts/bienvenida-al-blog/index.md",
     "content/posts/que-distro-uso/index.md",
     "public/images/Pasted image 20260426165933.png",
     "static/images/Pasted image 20260426165933.png",
@@ -193,7 +198,6 @@
     "static/images/Pasted image 20260426164741.png",
     "content/posts/que-distro-uso/feature.png",
     "content/posts/helix-cloud-despliegue-inicial/index.md",
-    "content/posts/bienvenida-al-blog/index.md",
     "content/posts/2026-que-distro-uso/index.md",
     "content/posts/que-distro-uso",
     "content/posts/2026-que-distro-uso/feature.png",
