@@ -184,6 +184,8 @@
   },
   "active": "065299cfc5edb5a9",
   "lastOpenFiles": [
+    "layouts/partials/header/fixed-fill.html",
+    "layouts/partials/header/fixed.html",
     "layouts/partials/header/basic.html~",
     "layouts/_default/baseof.html",
     "layouts/partials/extend-head.html",
@@ -210,9 +212,7 @@
     "content/posts/2026-que-distro-uso/Gemini_Generated_Image_rm3wgtrm3wgtrm3w.png",
     "content/posts/demo-post/index.md",
     "content/posts/2026-que-distro-uso/Sin título.md",
-    "content/posts/2026-que-distro-uso",
     "Untitled.md",
-    "public/tags/bash/index.xml",
     "GUIA_BLOG.md",
     "README.md",
     "demo.md",

@@ -1,0 +1,24 @@
+<style>
+  #custom-header-container {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    background-color: #3b4252 !important; /* Nord 1 Sólido */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  }
+  #header-spacer {
+    height: 120px !important; /* Espacio forzado para que el título baje */
+    display: block !important;
+  }
+</style>
+
+<div id="custom-header-container">
+  <div class="max-w-7xl m-auto px-6 sm:px-14 md:px-24 lg:px-32">
+    {{ partial "header/basic.html" . }}
+  </div>
+</div>
+
+<div id="header-spacer"></div>
