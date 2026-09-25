@@ -1,6 +1,6 @@
 +++
 date = '2026-09-25T12:01:59-05:00'
-draft = true
+draft = false
 title = 'El dilema del ingeniero: Cómo dejé de sobrepensar y construí este blog con Hugo, Obsidian y GitHub Pages'
 description = 'Cómo pasé de diseñar una arquitectura compleja para un simple blog a un flujo minimalista con Obsidian, Hugo y GitHub Pages.'
 categories = ["Infraestructura"]
