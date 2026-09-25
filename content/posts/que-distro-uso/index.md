@@ -13,7 +13,7 @@ description: Si estás dando tus primeros pasos en el mundo de la infraestructur
 ---
 # El Salto a Linux: Cómo Elegir tu Primera Distro y Abrazar la Terminal
 
-![](../../../static/images/Pasted%20image%2020260426164741.png)
+![](../../../static/images/que-distro-uso-01.png)
 
 Si estás dando tus primeros pasos en el mundo de la infraestructura, el desarrollo o la nube, llega un momento en el que tu sistema operativo actual empieza a sentirse como un límite. Dar el salto y utilizar una distribución de `Linux` como tu sistema `host` (tu máquina principal de trabajo) es una de las decisiones más transformadoras para cualquier profesional de TI. 
 
@@ -46,7 +46,7 @@ Como todo cambio importante, adoptar Linux tiene sus matices.
 
 ## 🧭 Cómo Elegir tu Primera Distro
 
-![](../../../static/images/Pasted%20image%2020260426165933.png)
+![](../../../static/images/que-distro-uso-02.png)
 
 No te compliques en tu primer día. El objetivo inicial es tener un sistema funcional para que puedas concentrarte en aprender, no en reparar.
 

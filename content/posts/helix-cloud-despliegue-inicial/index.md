@@ -14,4 +14,4 @@ Este es el primer post con estética **Nord**.
 Infraestructura desplegada correctamente en GitHub Pages con dominio propio.
 {{< /alert >}}
 
-![](../../../static/images/Pasted%20image%2020260426160810.png)
+![](../../../static/images/helix-cloud-01.png)
