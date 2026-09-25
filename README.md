@@ -41,7 +41,7 @@ Este blog está construido con tecnologías modernas y declarativas:
 
 ## 💻 Desarrollo Local
 
-1. Instala **Hugo extended** (ver [GUIA_BLOG.md](GUIA_BLOG.md#0-preparar-el-entorno-máquina-o-contenedor-nuevo)).
+1. Instala **Hugo extended** (ver GUIA_BLOG.md)
 2. Descarga el tema y levanta el servidor:
 
 ```bash
