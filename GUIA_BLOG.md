@@ -55,33 +55,54 @@ git commit -m "update blowfish theme"
 
 ## 1. Crear una Nueva Publicación
 
-Para mantener la estructura y consistencia, siempre utiliza el CLI de Hugo para generar nuevos archivos:
+Cada post es una carpeta (*page bundle*) con su `index.md` y sus imágenes. Créalo con el CLI de Hugo desde la raíz del proyecto:
 
 ```bash
-# Ejecutar desde la raíz del proyecto (donde está hugo.toml)
-hugo new posts/nombre-de-tu-articulo.md
+hugo new content posts/nombre-de-tu-articulo
 ```
 
-Esto generará un archivo con la cabecera (Frontmatter) preconfigurada con la fecha y hora actuales.
+O con el atajo del `Makefile`:
+
+```bash
+make post nombre=nombre-de-tu-articulo   # crear post
+make dev                                 # servidor local con borradores
+make build                               # build de producción
+```
+
+Esto usa la plantilla `archetypes/posts/index.md` y genera:
+
+```
+content/posts/nombre-de-tu-articulo/
+└── index.md   # frontmatter con fecha actual, draft: true y estructura base
+```
+
+Guarda las imágenes **dentro de esa carpeta** y enlázalas con ruta relativa:
+
+```markdown
+![Descripción de la imagen](diagrama.png)
+```
+
+- Una imagen llamada `feature.png` (o `.jpg`) se usa automáticamente como portada del post.
+- Obsidian está configurado para guardar las imágenes pegadas en la misma carpeta de la nota.
+
+> Si creas el post desde Obsidian, usa la plantilla `templates/nuevo-post.md` (Templater) dentro de una carpeta nueva en `content/posts/` y nombra la nota `index`.
 
 ## 2. Configurar el Frontmatter (Categorías y Etiquetas)
 
-Abre el archivo recién creado y clasifica tu contenido:
+Abre el `index.md` recién creado y completa la cabecera:
 
 ```yaml
 ---
-title: "Título de tu artículo"
-date: 2026-04-25T10:00:00-05:00
-draft: false # Cambiar a false cuando estés listo para publicar
-categories:
-  - Linux      # Usa categorías para los pilares principales de tu blog
-tags:
-  - bash       # Usa etiquetas para temas más específicos
-  - scripting
+title: "Título De Tu Artículo"   # se genera a partir del nombre de la carpeta; ajusta tildes
+date: 2026-09-25T10:00:00-05:00  # se completa automáticamente
+draft: true                      # cambia a false cuando esté listo para publicar
+description: "Resumen de una línea para tarjetas y SEO"
+categories: ["Linux"]            # pilares principales del blog (mayúscula inicial)
+tags: ["bash", "scripting"]      # temas específicos (minúsculas)
 ---
 ```
 
-> **Importante:** La primera letra de las categorías suele ir en mayúscula para mantener uniformidad (ej. `Linux`, `Seguridad`).
+> **Importante:** Usa categorías con mayúscula inicial (`Linux`, `Infraestructura`, `Seguridad`) y etiquetas en minúsculas, reutilizando las existentes cuando apliquen para que los posts relacionados funcionen.
 
 ## 3. Botones del Inicio (Pills de Etiquetas)
 

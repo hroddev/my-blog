@@ -1,6 +1,6 @@
 ---
-title: "<% tp.file.title %>"
-date: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
+title: "{{ replace .File.ContentBaseName "-" " " | title }}"
+date: {{ .Date }}
 draft: true
 description: ""
 categories: []

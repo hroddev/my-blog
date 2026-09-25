@@ -3,6 +3,6 @@
   "vimMode": true,
   "newLinkFormat": "relative",
   "showLineNumber": true,
-  "attachmentFolderPath": "static/images",
+  "attachmentFolderPath": "./",
   "promptDelete": false
 }
