@@ -1,9 +1,10 @@
-<div class="flex items-center w-full py-3" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+<div class="flex items-center w-full py-3">
   
   <!-- Logo e Icono -->
   <div class="flex items-center flex-none">
     <a href="{{ "https://hrod.dev" | relLangURL }}" class="flex items-center nozoom" style="text-decoration: none;">
-      <svg width="24" height="24" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 12px; display: block;">
+      <!-- Mismo logo que hrod.dev (chevron + guion bajo) -->
+      <svg width="28" height="28" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px; display: block;">
         <defs>
           <linearGradient id="aurora" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="#bf616a"/>
@@ -11,10 +12,11 @@
             <stop offset="100%" stop-color="#ebcb8b"/>
           </linearGradient>
         </defs>
-        <path d="M12 10 L35 30 L12 50" stroke="url(#aurora)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 12 L28 30 L8 48" stroke="url(#aurora)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="32" y1="48" x2="52" y2="48" stroke="url(#aurora)" stroke-width="7" stroke-linecap="round"/>
       </svg>
-      <span style="font-size: 1.25rem; letter-spacing: -0.025em; color: white;">
-        <strong style="font-weight: 700;">hrod</strong><span style="font-weight: 300; opacity: 0.5;">.dev</span>
+      <span style="font-size: 1.125rem; letter-spacing: -0.025em;">
+        <strong style="font-weight: 900; color: #eceff4;">hrod</strong><span style="font-weight: 300; color: #d8dee9;">.dev</span>
       </span>
     </a>
   </div>
@@ -25,7 +27,7 @@
     <nav class="hidden md:flex items-center">
       {{ range .Site.Menus.main }}
         <a href="{{ .URL | relLangURL }}" 
-           style="margin-left: 2rem; font-size: 0.875rem; font-weight: 400; color: #e5e9f0; text-decoration: none;" 
+           style="margin-left: 2rem; font-size: 0.875rem; font-weight: 500; color: #d8dee9; text-decoration: none;" 
            class="hover:text-white transition-colors">
           {{ .Name }}
         </a>

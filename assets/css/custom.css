@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
 :root {
   --nord0: #2e3440;
@@ -223,3 +222,8 @@ article footer {
 }
 
 /* El botón "Mostrar más" se define con Tailwind en recent-articles/main.html */
+
+/* Código con la misma fuente mono que hrod.dev */
+code, pre, kbd, samp {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+}
