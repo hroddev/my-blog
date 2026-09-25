@@ -19,7 +19,7 @@ Mi mente empezó a diseñar el sistema "perfecto" para un simple blog: contenedo
 
 Ya usaba Obsidian para mi toma de notas personal. Me encanta porque es simplemente Markdown: texto plano, portátil y rápido. La pieza que me faltaba era cómo llevar esas notas al mundo exterior sin fricción.
 
-Un video en YouTube me dio la guía que necesitaba y me hizo redescubrir Hugo. Había escuchado de este generador de sitios estáticos hace años, pero nunca le presté la atención debida. Al probarlo, me pareció genial. Es absurdamente rápido, compila todo en milisegundos y encaja perfectamente con un flujo de trabajo minimalista.
+Un par de videos en YouTube, de [NetworkChuck](https://youtu.be/dnE7c0ELEH8) y [Christian Lempa](https://youtu.be/MX4yy1dTVYg), me dieron la guía que necesitaba y me hicieron redescubrir Hugo. Había escuchado de este generador de sitios estáticos hace años, pero nunca le presté la atención debida. Al probarlo, me pareció genial. Es absurdamente rápido, compila todo en milisegundos y encaja perfectamente con un flujo de trabajo minimalista.
 
 Decidí unir Hugo con Tailwind, escribir mis posts en Obsidian y dejar que GitHub Pages hiciera el resto. Este es el sistema lógico y reproducible que logré, pero optimizado para no estorbar a la creatividad.
 
@@ -51,3 +51,8 @@ El pipeline de GitHub Actions toma los archivos estáticos generados (HTML, CSS,
 A veces, la mejor arquitectura es la que no existe. Renunciar al control de una infraestructura compleja me costó, pero me regaló algo mucho más valioso: tiempo para escribir.
 
 Si estás posponiendo un proyecto personal porque estás diseñando la arquitectura perfecta en tu cabeza, te invito a probar el camino de menor resistencia. Abre un editor de texto, escribe, haz commit y publica. La simplicidad también es una forma de ingeniería elegante.
+
+## Referencias
+
+- NetworkChuck — [I started a blog.....in 2024 (why you should too)](https://youtu.be/dnE7c0ELEH8)
+- Christian Lempa — [Building a static website in Markdown with Hugo](https://youtu.be/MX4yy1dTVYg)
