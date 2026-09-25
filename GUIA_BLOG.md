@@ -83,21 +83,20 @@ tags:
 
 > **Importante:** La primera letra de las categorías suele ir en mayúscula para mantener uniformidad (ej. `Linux`, `Seguridad`).
 
-## 3. Actualizar los Botones del Inicio (`_index.md`)
+## 3. Botones del Inicio (Pills de Etiquetas)
 
-Los botones (pills) que aparecen en la página de inicio están configurados como HTML directo en `content/_index.md` para un control visual exacto.
+Los botones (pills) de la página de inicio se **generan automáticamente** a partir de las etiquetas (`tags`) de todos los posts publicados. No hay que editarlos a mano: al usar una etiqueta nueva en un post, aparece su botón en el inicio.
 
-Si agregas una **Categoría Nueva** (ej. `DevOps`) y quieres que aparezca un botón para ella en el inicio:
+La portada se define en `layouts/partials/home/custom.html` (`content/_index.md` solo indica `layout: "custom"`). Ahí puedes ajustar:
 
-1. Abre `content/_index.md`.
-2. Busca la sección `<div class="flex flex-wrap gap-3...">`.
-3. Duplica uno de los enlaces `<a>` existentes.
-4. Cambia el `href` y el texto visible:
+- **Colores:** la lista `$colors` (paleta Nord Aurora) se asigna en orden rotativo a cada etiqueta.
+- **Estilo:** las clases del enlace `<a>` (tamaño, padding, bordes redondeados).
 
-```html
-<!-- Ejemplo de nuevo botón -->
-<a href="/categories/devops" class="px-4 py-1.5 text-sm font-semibold rounded-full bg-neutral-200 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 hover:bg-primary-500 hover:text-white dark:hover:bg-primary-400 dark:hover:text-neutral-900 transition-colors border border-transparent hover:border-primary-500">DevOps</a>
+```go-html-template
+{{ $colors := slice "#bf616a" "#d08770" "#ebcb8b" "#a3be8c" "#b48ead" }}
 ```
+
+> Los posts con `draft = true` no generan botones en producción, pero sí se ven con `hugo server -D`.
 
 ## 4. Ejecutar Entorno Local
 

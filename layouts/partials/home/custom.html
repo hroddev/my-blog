@@ -7,9 +7,10 @@
       Notas sobre arquitectura de sistemas, automatización y defensa digital. 
       Explorando el código abierto y las nubes declarativas con estética Nord.
     </p>
-    
-    <!-- Pills de Tags con contraste forzado -->
-    <div class="flex flex-wrap gap-3 mt-8">
+  </div>
+
+  <!-- Pills de Tags con contraste forzado (fuera de max-w-3xl para usar todo el ancho) -->
+  <div class="flex flex-wrap gap-3 mt-8">
       {{ $colors := slice "#bf616a" "#d08770" "#ebcb8b" "#a3be8c" "#b48ead" }}
       {{ $count := 0 }}
       {{ range $name, $items := site.Taxonomies.tags }}
@@ -22,7 +23,6 @@
         </a>
         {{ $count = add $count 1 }}
       {{ end }}
-    </div>
   </div>
 </section>
 
