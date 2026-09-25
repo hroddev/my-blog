@@ -39,6 +39,18 @@ Este blog está construido con tecnologías modernas y declarativas:
 - **github actions** Automatización para un despliegue continuo.
 - **github pages** Alojamiento del sitio.
 
+## 💻 Desarrollo Local
+
+1. Instala **Hugo extended** (ver [GUIA_BLOG.md](GUIA_BLOG.md#0-preparar-el-entorno-máquina-o-contenedor-nuevo)).
+2. Descarga el tema y levanta el servidor:
+
+```bash
+git submodule update --init
+hugo server
+```
+
+3. Abre http://localhost:1313.
+
 ---
 Desarrollado con ❤️ para la comunidad de tecnología.  
 🔗 Visita el sitio en: [https://blog.hrod.dev/](https://blog.hrod.dev/)
