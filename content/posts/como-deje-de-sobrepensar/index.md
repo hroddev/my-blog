@@ -52,6 +52,12 @@ A veces, la mejor arquitectura es la que no existe. Renunciar al control de una 
 
 Si estás posponiendo un proyecto personal porque estás diseñando la arquitectura perfecta en tu cabeza, te invito a probar el camino de menor resistencia. Abre un editor de texto, escribe, haz commit y publica. La simplicidad también es una forma de ingeniería elegante.
 
+Si quieres ver cómo está armado este blog por dentro (configuración de Hugo, tema, plantillas de Obsidian y el pipeline de despliegue), el código es abierto y está disponible en GitHub. Siéntete libre de usarlo como punto de partida para el tuyo:
+
+{{< button href="https://github.com/hroddev/my-blog" target="_blank" >}}
+Ver el repositorio en GitHub
+{{< /button >}}
+
 ## Referencias
 
 - NetworkChuck — [I started a blog.....in 2024 (why you should too)](https://youtu.be/dnE7c0ELEH8)
