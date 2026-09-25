@@ -1,46 +1,48 @@
-/* assets/css/schemes/nord-aurora.css */
-
+/* assets/css/schemes/nord-aurora.css
+ *
+ * Blowfish espera tripletas "R, G, B" (se usan como rgba(var(--color-x), a)),
+ * no valores hex. Paleta Nord: https://www.nordtheme.com/docs/colors-and-palettes
+ *
+ * En modo oscuro Blowfish usa: fondo neutral-800, texto neutral / neutral-300,
+ * títulos neutral-100, texto secundario neutral-400/500, bordes neutral-600/700.
+ */
 :root {
-  /* Polar Night - Palette 1 */
-  --nord0: #2e3440;
-  --nord1: #3b4252;
-  --nord2: #434c5e;
-  --nord3: #4c566a;
+  /* Snow Storm nord4 — texto base */
+  --color-neutral: 216, 222, 233;
 
-  /* Snow Storm - Palette 2 */
-  --nord4: #d8dee9;
-  --nord5: #e5e9f0;
-  --nord6: #eceff4;
+  /* Polar Night + Snow Storm */
+  --color-neutral-50: 236, 239, 244;  /* nord6 */
+  --color-neutral-100: 236, 239, 244; /* nord6 — títulos */
+  --color-neutral-200: 229, 233, 240; /* nord5 */
+  --color-neutral-300: 216, 222, 233; /* nord4 — cuerpo */
+  --color-neutral-400: 174, 182, 197; /* nord4 atenuado */
+  --color-neutral-500: 123, 136, 161; /* texto secundario */
+  --color-neutral-600: 76, 86, 106;   /* nord3 */
+  --color-neutral-700: 67, 76, 94;    /* nord2 */
+  --color-neutral-800: 46, 52, 64;    /* nord0 — fondo */
+  --color-neutral-900: 36, 41, 51;    /* más oscuro que nord0 */
 
-  /* Frost - Palette 3 */
-  --nord7: #8fbcbb;
-  --nord8: #88c0d0;
-  --nord9: #81a1c1;
-  --nord10: #5e81ac;
+  /* Aurora nord12 (naranja) — acento principal, como el CTA de hrod.dev */
+  --color-primary-50: 250, 238, 234;
+  --color-primary-100: 244, 221, 213;
+  --color-primary-200: 234, 196, 183;
+  --color-primary-300: 222, 168, 150;
+  --color-primary-400: 214, 150, 130;
+  --color-primary-500: 208, 135, 112; /* nord12 */
+  --color-primary-600: 191, 113, 94;
+  --color-primary-700: 160, 92, 76;
+  --color-primary-800: 124, 72, 60;
+  --color-primary-900: 90, 52, 44;
 
-  /* Aurora - Palette 4 */
-  --nord11: #bf616a;
-  --nord12: #d08770;
-  --nord13: #ebcb8b;
-  --nord14: #a3be8c;
-  --nord15: #b48ead;
-
-  /* Map to Blowfish naming convention */
-  --color-neutral-background: var(--nord0);
-  --color-neutral-text: var(--nord4);
-  --color-neutral-50: var(--nord1);
-  --color-neutral-100: var(--nord1);
-  --color-neutral-200: var(--nord2);
-  --color-neutral-400: var(--nord3);
-  --color-neutral-800: var(--nord6);
-
-  --color-primary-400: var(--nord9);
-  --color-primary-500: var(--nord8);
-  --color-primary-600: var(--nord7);
-}
-
-.dark, :root {
-  --color-neutral-background: var(--nord0);
-  --color-neutral-text: var(--nord4);
-  --color-primary-500: var(--nord8);
+  /* Frost nord8 (cian) — acento secundario */
+  --color-secondary-50: 240, 248, 251;
+  --color-secondary-100: 222, 239, 244;
+  --color-secondary-200: 196, 226, 235;
+  --color-secondary-300: 165, 209, 222;
+  --color-secondary-400: 150, 200, 215;
+  --color-secondary-500: 136, 192, 208; /* nord8 */
+  --color-secondary-600: 110, 165, 184;
+  --color-secondary-700: 94, 129, 172;  /* nord10 */
+  --color-secondary-800: 76, 104, 140;
+  --color-secondary-900: 59, 80, 107;
 }
